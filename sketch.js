@@ -50,7 +50,7 @@ function setup() {
   //gameOver = createSprite(300,100);
   //gameOver.addImage(gameOverImg);
   
-  restart = createSprite(300,140);
+  restart = createSprite(windowWidth/2,140);
   restart.addImage(restartImg);
   
   //gameOver.scale = 0.5;
@@ -92,7 +92,7 @@ function draw() {
   
     trex.velocityY = trex.velocityY + 0.8
   
-    if (ground.x < 0){
+    if (ground.x < 100){
       ground.x = ground.width/2;
     }
   
