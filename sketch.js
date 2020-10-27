@@ -72,7 +72,7 @@ function draw() {
     background(255);
   // trex.debug = true;
 
-  text("Score: "+ score, 500,50);
+  text("Score: "+ score, windowWidth/2,50);
   
   if (touches.length>0 || keyDown ("space")&& trex.y>=height-120){
     
@@ -92,7 +92,7 @@ function draw() {
   
     trex.velocityY = trex.velocityY + 0.8
   
-    if (ground.x < 100){
+    if (ground.x < windowWidth-100){
       ground.x = ground.width/2;
     }
   
